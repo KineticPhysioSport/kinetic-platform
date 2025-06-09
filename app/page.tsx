@@ -1,1 +1,1 @@
-npm install framer-motion
+npm install framer-motion react-icons
