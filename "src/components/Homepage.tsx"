@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="flex-grow bg-blue-600 text-white flex flex-col items-center justify-center text-center">
-        <h1 className="text-5xl md:text-6xl font-bold">Welcome to Your Smart Platform</h1>
+      <section className="flex-grow flex flex-col items-center justify-center bg-blue-600 text-white text-center">
+        <h1 className="text-5xl font-bold md:text-6xl">Welcome to Your Smart Platform</h1>
         <p className="mt-4 text-lg md:text-xl">Your journey to better health starts here.</p>
       </section>
       
@@ -27,8 +27,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
-      {/* Optionally, you can add a footer or additional sections below */}
     </div>
   );
 }
