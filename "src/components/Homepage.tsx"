@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="flex-grow flex flex-col items-center justify-center bg-blue-600 text-white text-center">
-        <h1 className="text-5xl font-bold md:text-6xl">Welcome, Mouhamed!</h1>
+        <h1 className="text-5xl font-bold text-red-500">MOUHAMED</h1>
         <p className="mt-4 text-lg md:text-xl">Your journey to better health starts here.</p>
       </section>
       
