@@ -3,30 +3,19 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <main className="relative w-full h-screen overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute w-full h-full object-cover opacity-50"
-        poster="/poster.jpg"
-      >
-        <source src="/background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+    <main className="flex items-center justify-center h-screen bg-gray-100">
+      <div className="text-center px-6">
         <motion.h1
-          className="text-5xl md:text-6xl font-bold text-white mb-4"
-          initial={{ opacity: 0, y: 20 }}
+          className="text-5xl md:text-6xl font-bold text-gray-800 mb-4"
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Welcome to <span className="text-blue-500">Kinetic Platform</span>
+          Welcome to <span className="text-blue-600">Kinetic Platform</span>
         </motion.h1>
 
         <motion.p
-          className="text-white text-lg md:text-xl mb-6"
+          className="text-gray-600 text-lg md:text-xl mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
