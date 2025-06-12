@@ -8,17 +8,18 @@ export default function Home() {
         autoPlay
         loop
         muted
-        className="absolute w-full h-full object-cover"
+        className="absolute w-full h-full object-cover opacity-50"
+        poster="/poster.jpg"
       >
         <source src="/background.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
         <motion.h1
           className="text-5xl md:text-6xl font-bold text-white mb-4"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           Welcome to <span className="text-blue-500">Kinetic Platform</span>
@@ -26,8 +27,8 @@ export default function Home() {
 
         <motion.p
           className="text-white text-lg md:text-xl mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           AI-powered physiotherapy & performance tools
