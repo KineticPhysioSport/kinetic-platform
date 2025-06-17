@@ -14,7 +14,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Unlock Your Peak Performance
+            Lock Your Peak Performance
           </h1>
           <p className="text-lg md:text-xl font-light mb-6">
             Personalized mobility and recovery programs, powered by sports science.
