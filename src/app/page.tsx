@@ -2,17 +2,18 @@ import { FC } from 'react';
 
 const HomePage: FC = () => {
   return (
-    <main className="flex justify-center items-center h-screen bg-gray-100">
-      <div className="max-w-xl text-center p-5">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Welcome to Our Platform
+    <main className="relative flex items-center justify-center h-screen bg-[#e0e7ff]">
+      <img src="/poster.jpg" alt="Background Visual" className="absolute inset-0 w-full h-full object-cover opacity-40" />
+      <div className="relative z-10 text-center p-6 max-w-lg">
+        <h1 className="text-5xl font-bold text-blue-900 mb-4">
+          Move Better, Live Stronger
         </h1>
-        <p className="text-lg text-gray-700 mb-6">
-          Explore the features we've crafted to enhance your experience.
+        <p className="text-xl font-light text-gray-700 mb-6">
+          Where physiotherapy meets performance coaching.
         </p>
-        <button className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
+        <a href="#" className="inline-block px-8 py-3 bg-orange-500 text-white rounded-full shadow-lg transition duration-300 hover:bg-orange-600">
           Get Started
-        </button>
+        </a>
       </div>
     </main>
   );
