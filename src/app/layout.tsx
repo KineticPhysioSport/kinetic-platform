@@ -1,12 +1,17 @@
 import React from 'react';
 import './globals.css';
 
+export const metadata = {
+  title: 'Kinetic Platform',
+  description: 'Achieve your goals with AI-driven plans and real-time feedback.',
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <title>GOWOD Inspired Homepage</title>
-        <meta name="description" content="Achieve your goals with AI-driven plans and real-time feedback." />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="bg-gray-100">
