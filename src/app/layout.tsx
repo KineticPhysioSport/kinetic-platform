@@ -1,7 +1,3 @@
-/// @file: src/app/layout.tsx
-/// @mode: create
-
-tsx
 import './globals.css';
 
 export const metadata = {
@@ -11,7 +7,11 @@ export const metadata = {
   author: 'Kinetic Team',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
@@ -27,4 +27,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
