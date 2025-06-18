@@ -1,40 +1,49 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="h-screen relative bg-slate-50">
-      {/* Hero Section */}
-      <div className="relative h-full">
-        {/* Background Image */}
-        <Image
-          src="/poster.jpg"
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 w-full h-full z-0"
-          priority
-        />
-
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/60 z-0" />
-
-        {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Unlock Your Movement Potential
-          </h1>
-          <p className="text-lg md:text-xl text-white mb-8">
-            AI-powered recovery and mobility programs
-          </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded"
-          >
-            Start Assessment
-          </motion.button>
-        </div>
+    <div className="relative overflow-hidden h-screen">
+      <Image
+        src="/poster.jpg"
+        layout="fill"
+        objectFit="cover"
+        alt="Elite Sports Performance"
+        className="absolute inset-0 z-0"
+      />
+      <div className="relative z-10 flex flex-col justify-center items-center h-full bg-black bg-opacity-60">
+        <motion.h1
+          className="text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
+          Elevate Your Performance
+        </motion.h1>
+        <motion.p
+          className="mt-4 text-lg md:text-xl lg:text-2xl text-gray-300 text-center max-w-lg"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+        >
+          Combining the strength of elite sports performance with the safety and precision of physiotherapy. Leverage AI for optimized recovery.
+        </motion.p>
+        <motion.div
+          className="mt-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <Link href="/start-assessment">
+            <a
+              className="px-6 py-3 rounded-full bg-blue-600 text-white text-lg md:text-xl font-medium hover:bg-blue-800 transition"
+            >
+              Start Assessment
+            </a>
+          </Link>
+        </motion.div>
       </div>
-    </main>
+    </div>
   );
 }
